@@ -14,10 +14,10 @@ bufferline.setup {
   },
   highlights = {
     buffer_selected = {
-      gui = 'bold'
+      bold = true
     },
     fill = {
-      guibg = '#1c1e26'
+      bg = '#1c1e26'
     }
   }
 }
