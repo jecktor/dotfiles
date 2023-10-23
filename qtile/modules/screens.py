@@ -58,6 +58,19 @@ screens = [
                 foreground='#8C8C8C',
                 background='#212121',
             ),
+                widget.Wlan(
+                interface="wlan0",
+                format="{essid} {percent:2.0%}",
+                background="#212121",
+                update_interval=10
+             ),
+                widget.TextBox(
+                text='',
+                padding=5,
+                fontsize=20,
+                foreground='#8C8C8C',
+                background='#212121',
+            ),
                 widget.Clock(format='%d/%m/%y %H:%M',
                              background="#212121",
                              ),

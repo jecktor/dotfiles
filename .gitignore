@@ -8,3 +8,4 @@
 !wezterm/
 
 qtile/__pycache__/
+qtile/modules/__pycache__/
