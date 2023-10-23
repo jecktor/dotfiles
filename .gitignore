@@ -6,3 +6,5 @@
 !picom/
 !qtile/
 !wezterm/
+
+qtile/__pycache__/

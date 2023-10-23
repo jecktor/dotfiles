@@ -180,7 +180,11 @@ vim.o.timeoutlen = 300
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
+-- True color support
 vim.o.termguicolors = true
+
+-- Relative line numbers
+vim.wo.relativenumber = true
 
 -- Keymaps for better default experience
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
@@ -235,7 +239,7 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     ensure_installed = { 'c', 'cpp', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim',
-      'bash' },
+      'bash', 'astro', 'diff', 'html', 'css', 'json', 'markdown' },
 
     auto_install = true,
 
@@ -358,8 +362,12 @@ require('mason').setup()
 require('mason-lspconfig').setup()
 
 local servers = {
+  astro = {},
+  emmet_ls = {},
   clangd = {},
+  jsonls = {},
   tsserver = {},
+  tailwindcss = {},
   rust_analyzer = {},
   jedi_language_server = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
