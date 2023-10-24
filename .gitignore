@@ -2,6 +2,7 @@
 
 !.gitignore
 
+!dunst/
 !nvim/
 !picom/
 !qtile/
