@@ -239,7 +239,7 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     ensure_installed = { 'c', 'cpp', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim',
-      'bash', 'astro', 'diff', 'html', 'css', 'json', 'markdown' },
+      'bash', 'astro', 'diff', 'html', 'css', 'json', 'markdown', 'markdown_inline' },
 
     auto_install = true,
 
