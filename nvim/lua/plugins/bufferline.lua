@@ -1,5 +1,5 @@
-vim.api.nvim_set_keymap('n', '<C-L>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-H>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-l>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-h>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true })
 
 return {
   "akinsho/nvim-bufferline.lua",
@@ -9,7 +9,7 @@ return {
       options = {
         mode = 'tabs',
         always_show_bufferline = false,
-        separator_style= 'thin',
+        separator_style = 'thin',
         show_buffer_close_icons = false,
         show_close_icon = false,
         color_icons = false

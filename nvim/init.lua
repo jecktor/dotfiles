@@ -13,11 +13,7 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   }
 end
-
 vim.opt.rtp:prepend(lazypath)
-
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
 
 -- Core plugins
 require('lazy').setup({
