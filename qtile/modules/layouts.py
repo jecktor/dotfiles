@@ -4,8 +4,8 @@ from .colors import ColorF, ColorA
 
 
 layouts = [
-    layout.MonadTall(margin=10, border_focus=ColorF,
-                     border_normal=ColorA, border_width=2),
+    layout.MonadTall(margin=0, border_focus=ColorF,
+                     border_normal=ColorA, border_width=0),
     layout.Max(),
 ]
 
