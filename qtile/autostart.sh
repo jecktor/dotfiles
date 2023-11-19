@@ -1,6 +1,7 @@
 #!/bin/sh
 
-nitrogen --restore & disown
+wal -R
+
 picom & disown --experimental-backends
 
 # start polkit agent

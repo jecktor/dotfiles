@@ -1,10 +1,11 @@
 from libqtile import layout
 from libqtile.config import Match
+from .colors import ColorF, ColorA
 
 
 layouts = [
-    layout.MonadTall(margin=10, border_focus='#D08579',
-                     border_normal='#312B29'),
+    layout.MonadTall(margin=10, border_focus=ColorF,
+                     border_normal=ColorA, border_width=2),
     layout.Max(),
 ]
 
@@ -16,4 +17,4 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='ssh-askpass'),  # ssh-askpass
     Match(title='branchdialog'),  # gitk
     Match(title='pinentry'),  # GPG key password entry
-], border_focus='#D08579', border_normal='#312B29', border_width=2)
+], border_focus=ColorF, border_normal=ColorA, border_width=2)

@@ -2,7 +2,7 @@ return {
 	color_scheme = "zenbones_dark",
 
 	font = require("wezterm").font("JetBrainsMono Nerd Font"),
-	font_size = 14.0,
+	font_size = 13.0,
 
 	default_cursor_style = "SteadyBlock",
 

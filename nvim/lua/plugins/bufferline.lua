@@ -27,11 +27,11 @@ return {
           bg = 'none'
         },
         buffer = {
-          fg = '#D8D8D8',
+          fg = '#c9bab3',
           bg = 'none',
         },
         buffer_selected = {
-          fg = '#D08579',
+          fg = '#9D8173',
           bg = 'none',
           bold = false,
           italic = false,

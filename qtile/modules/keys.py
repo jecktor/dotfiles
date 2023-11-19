@@ -1,11 +1,14 @@
 from libqtile.lazy import lazy
 from libqtile.config import Key
 from libqtile import extension
+from .colors import ColorZ, ColorF, ColorG
 import os
 
 
 mod = "mod4"
 terminal = "wezterm"
+
+ColorZ = ColorZ[:-2]
 
 keys = [
     # Switch between windows
@@ -20,11 +23,11 @@ keys = [
 
     Key([mod], "r", lazy.run_extension(extension.DmenuRun(
         dmenu_prompt="",
-        dmenu_font="JetBrainsMono Nerd Font",
-        background="#171717",
-        foreground="#D8D8D8",
-        selected_background="#171717",
-        selected_foreground="#D08579",
+        dmenu_font="JetBrains Mono Nerd Font",
+        background=ColorZ,
+        foreground=ColorG,
+        selected_background=ColorZ,
+        selected_foreground=ColorF,
     ))),
     Key([mod], "e", lazy.spawn("thunar"), desc="spawn thunar"),
     Key([mod], "w", lazy.spawn("thorium-browser"), desc="spawn browser"),
