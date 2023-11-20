@@ -4,7 +4,7 @@ from .colors import ColorZ, ColorG
 
 
 widget_defaults = dict(
-    font='JetBrains Mono Nerd Font',
+    font="JetBrains Mono Nerd Font",
     fontsize=14,
     padding=3,
 )
@@ -31,12 +31,12 @@ class MyVolume(widget.Volume):
         self.draw()
 
         if wob:
-            with open(self.wob, 'a') as f:
+            with open(self.wob, "a") as f:
                 f.write(str(self.volume) + "\n")
 
 
 volume = MyVolume(
     background=ColorZ,
     foreground=ColorG,
-    mouse_callbacks={'Button1': lambda: qtile.cmd_spawn("pavucontrol")}
+    mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("pavucontrol")},
 )
