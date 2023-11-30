@@ -6,6 +6,7 @@ return {
       "selene",
       "shfmt",
       "emmet-ls",
+      "haskell-language-server",
       "tailwindcss-language-server",
       "typescript-language-server",
       "astro-language-server",
