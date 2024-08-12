@@ -9,7 +9,6 @@ return {
       "gitignore",
       "go",
       "graphql",
-      "haskell",
       "http",
       "rust",
       "python",
